@@ -1,10 +1,13 @@
 <nav class="pc-sidebar">
     <div class="navbar-wrapper">
         <div class="m-header">
-            <a href="../dashboard/index.html" class="b-brand text-primary">
+            <a href="{{ url('/admin/')}}" class="b-brand text-primary d-flex align-items-center justify-content-center">
                 <!-- ========   Change your logo from here   ============ -->
-                {{-- <img src="{{ asset('assets/images/logo-dark.svg')}}" class="img-fluid logo-lg" alt="logo"> --}}
-                <h4 class="text-">SISPAN</h4>
+                <img src="{{ asset('assets/images/logo-osis.png')}}" class="rounded-circle" width="60"  alt="logo">
+                <div class="">
+                    <h4 class="text-primary m-0">SIP-Ketos</h4>
+                    <p class="text-muted m-0" style="font-size: 8px">Sistem Informasi Pemilihan Ketua Osis</p>
+                </div>
             </a>
         </div>
         <div class="navbar-content">

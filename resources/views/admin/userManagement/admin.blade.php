@@ -36,8 +36,8 @@
                     </div>
                 @endif
                 @if (session('success'))
-                    <div class="alert alert-info text-center">
-                        <small class="text-info">
+                    <div class="alert alert-success text-center">
+                        <small class="text-success">
                             {{ session('success') }}
                         </small>
                     </div>

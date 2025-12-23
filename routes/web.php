@@ -5,6 +5,7 @@ use App\Http\Controllers\CandidateController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserManagementController;
+use App\Http\Controllers\UserProfileController;
 use App\Http\Controllers\VoteController;
 use Illuminate\Support\Facades\Route;
 
@@ -46,5 +47,11 @@ Route::middleware(['auth', 'is_admin'])->group(function () {
         Route::get('/edit/{id}', [UserManagementController::class, 'edit'])->name('edit');
         Route::get('/generate-password/{id}', [UserManagementController::class, 'generatePassword'])->name('generate-password');
         Route::get('/delete/{id}', [UserManagementController::class, 'destroy'])->name('destroy');
+    });
+
+    Route::prefix('admin/user-profile')->name('user-profile.')->group(function () {
+        Route::get('/show/{id}', [UserProfileController::class, 'show'])->name('show');
+        Route::get('/edit/{id}', [UserProfileController::class, 'edit'])->name('edit');
+        Route::put('/update/{id}', [UserProfileController::class, 'update'])->name('update');
     });
 });

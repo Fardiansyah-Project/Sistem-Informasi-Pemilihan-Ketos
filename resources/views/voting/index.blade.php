@@ -103,11 +103,14 @@
                                                     alt="{{ $candidate->name }}" class="rounded-circle shadow"
                                                     style="width: 100px; height: 100px; object-fit: cover;">
                                             @else
-                                                <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center shadow"
+                                                <img src="{{ asset('default/user.png') }}" alt="{{ $candidate->name }}"
+                                                    class="rounded-circle shadow"
+                                                    style="width: 100px; height: 100px; object-fit: cover;">
+                                                {{-- <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center shadow"
                                                     style="width: 100px; height: 100px;">
                                                     <span
                                                         class="display-4 fw-bold">{{ $candidate->candidate_number }}</span>
-                                                </div>
+                                                </div> --}}
                                             @endif
                                         </div>
                                         <div class="col">

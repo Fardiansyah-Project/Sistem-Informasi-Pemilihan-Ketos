@@ -51,13 +51,23 @@
                                         <td>{{ $item->candidate_number }}</td>
                                         <td>{{ $item->vision_mission }}</td>
                                         <td>
-                                            <a href="{{ asset('storage/uploads/candidate/' . $item->photo) }}" target="_blank" >
-                                                <img src="{{ asset('storage/uploads/candidate/' . $item->photo) }}" alt="Foto kandidat" width="100px" class="rounded-md">
-                                            </a>
+                                            @if ($item->photo)
+                                                <a href="{{ asset('storage/uploads/candidate/' . $item->photo) }}"
+                                                    target="_blank">
+                                                    <img src="{{ asset('storage/uploads/candidate/' . $item->photo) }}"
+                                                        alt="Foto kandidat" width="100px" class="rounded-md">
+                                                </a>
+                                            @else
+                                                <img src="{{ asset('default/user.png') }}"
+                                                    alt="Foto kandidat" width="100px" class="rounded-md">
+                                            @endif
                                         </td>
                                         <td>
-                                            <a href="{{ url('admin/candidates/edit', $item->id) }}" class="btn btn-sm btn-warning">Edit</a>
-                                            <a href="{{ url('admin/candidates/delete', $item->id) }}" onclick="return confirm('Apakah anda yakin ingin menghapus ini? ')" class="btn btn-sm btn-danger">Hapus</a>
+                                            <a href="{{ url('admin/candidates/edit', $item->id) }}"
+                                                class="btn btn-sm btn-warning">Edit</a>
+                                            <a href="{{ url('admin/candidates/delete', $item->id) }}"
+                                                onclick="return confirm('Apakah anda yakin ingin menghapus ini? ')"
+                                                class="btn btn-sm btn-danger">Hapus</a>
                                         </td>
                                     </tr>
                                 @empty

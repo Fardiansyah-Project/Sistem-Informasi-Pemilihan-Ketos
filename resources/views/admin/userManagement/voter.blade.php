@@ -28,7 +28,7 @@
                     </div>
                 </div>
                 @if (session('generate_password'))
-                    <div class="alert alert-info text-center">
+                    <div class="alert alert-success text-center">
                         {{ session('generate_password') }}<br>
                         <small class="text-info">
                             Simpan password ini, karena tidak akan muncul lagi.
@@ -37,7 +37,7 @@
                 @endif
                 @if (session('success'))
                     <div class="alert alert-info text-center">
-                        <small class="text-info">
+                        <small class="text-success">
                             {{ session('success') }}
                         </small>
                     </div>
