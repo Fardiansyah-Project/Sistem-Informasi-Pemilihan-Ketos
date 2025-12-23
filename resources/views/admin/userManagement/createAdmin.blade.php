@@ -1,10 +1,13 @@
 @extends('admin.layouts.base')
+@section('title')
+    Form Admin
+@endsection
 @section('content')
     <div class="row">
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <h5>Form Kandidat</h5>
+                    <h5>Form Admin</h5>
                 </div>
                 <div class="card-body">
                     <form action="{{ route('user-management.admin.store') }}" method="POST" >

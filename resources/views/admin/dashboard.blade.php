@@ -23,8 +23,12 @@
                         <p class="text-muted mb-0">Hasil Perolehan Suara Real-time</p>
                     </div>
                     <div class="text-end">
-                        <span class="badge bg-light-success">
-                            <i class="ti ti-circle-check me-1"></i>Aktif
+                        <span class="badge {{ $status->value == 'open' ? 'bg-light-success' : 'bg-light-danger' }}">
+                            @if ($status->value == 'open')
+                                <i class="ti ti-circle-check me-1"></i>Aktif
+                            @else
+                                <i class="ti ti-circle-x me-1"></i>Tertutup
+                            @endif
                         </span>
                     </div>
                 </div>

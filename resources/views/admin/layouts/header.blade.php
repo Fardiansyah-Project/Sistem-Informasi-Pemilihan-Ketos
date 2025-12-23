@@ -41,10 +41,6 @@
         <div class="ms-auto">
             <ul class="list-unstyled">
                 <li class="dropdown pc-h-item">
-                    <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#"
-                        role="button" aria-haspopup="false" aria-expanded="false">
-                        <i class="ti ti-mail"></i>
-                    </a>
                     <div class="dropdown-menu dropdown-notification dropdown-menu-end pc-h-dropdown">
                         <div class="dropdown-header d-flex align-items-center justify-content-between">
                             <h5 class="m-0">Message</h5>
@@ -55,7 +51,7 @@
                         <div class="dropdown-header px-0 text-wrap header-notification-scroll position-relative"
                             style="max-height: calc(100vh - 215px)">
                             <div class="list-group list-group-flush w-100">
-                                <a class="list-group-item list-group-item-action">
+                                {{-- <a class="list-group-item list-group-item-action">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0">
                                             <img src="{{ asset('assets/images/user/avatar-2.jpg') }}" alt="user-image"
@@ -68,8 +64,8 @@
                                             <span class="text-muted">2 min ago</span>
                                         </div>
                                     </div>
-                                </a>
-                                <a class="list-group-item list-group-item-action">
+                                </a> --}}
+                                {{-- <a class="list-group-item list-group-item-action">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0">
                                             <img src="{{ asset('assets/images/user/avatar-1.jpg') }}" alt="user-image"
@@ -81,8 +77,8 @@
                                             <span class="text-muted">5 August</span>
                                         </div>
                                     </div>
-                                </a>
-                                <a class="list-group-item list-group-item-action">
+                                </a> --}}
+                                {{-- <a class="list-group-item list-group-item-action">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0">
                                             <img src="{{ asset('assets/images/user/avatar-3.jpg') }}" alt="user-image"
@@ -94,8 +90,8 @@
                                             <span class="text-muted">7 hours ago</span>
                                         </div>
                                     </div>
-                                </a>
-                                <a class="list-group-item list-group-item-action">
+                                </a> --}}
+                                {{-- <a class="list-group-item list-group-item-action">
                                     <div class="d-flex">
                                         <div class="flex-shrink-0">
                                             <img src="../assets/images/user/avatar-4.jpg" alt="user-image"
@@ -108,7 +104,7 @@
                                             <span class="text-muted">Daily scrum meeting time</span>
                                         </div>
                                     </div>
-                                </a>
+                                </a> --}}
                             </div>
                         </div>
                         <div class="dropdown-divider"></div>
@@ -145,14 +141,14 @@
                         <ul class="nav drp-tabs nav-fill nav-tabs" id="mydrpTab" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active" id="drp-t1" data-bs-toggle="tab"
-                                    data-bs-target="#drp-tab-1" type="button" role="tab"
-                                    aria-controls="drp-tab-1" aria-selected="true"><i class="ti ti-user"></i>
+                                    data-bs-target="#drp-tab-1" type="button" role="tab" aria-controls="drp-tab-1"
+                                    aria-selected="true"><i class="ti ti-user"></i>
                                     Profile</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="drp-t2" data-bs-toggle="tab"
-                                    data-bs-target="#drp-tab-2" type="button" role="tab"
-                                    aria-controls="drp-tab-2" aria-selected="false"><i class="ti ti-settings"></i>
+                                <button class="nav-link" id="drp-t2" data-bs-toggle="tab" data-bs-target="#drp-tab-2"
+                                    type="button" role="tab" aria-controls="drp-tab-2" aria-selected="false"><i
+                                        class="ti ti-settings"></i>
                                     Setting</button>
                             </li>
                         </ul>

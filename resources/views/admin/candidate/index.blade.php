@@ -2,7 +2,7 @@
 @extends('admin.layouts.base')
 
 @section('title')
-    Dashboard Pemilihan Ketua OSIS
+    Data Kandidat Ketua OSIS
 @endsection
 
 @section('content')

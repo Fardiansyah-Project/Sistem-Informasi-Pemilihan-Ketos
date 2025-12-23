@@ -62,11 +62,13 @@
                                         <td>{{ $item->email }}</td>
                                         <td>{{ $item->role }}</td>
                                         <td>
-                                            <a href="{{ url('admin/user-management/edit', $item->id) }}"
-                                                class="btn btn-warning">Edit</a>
+                                            {{-- <a href="{{ url('admin/user-management/edit', $item->id) }}"
+                                                class="btn btn-warning">Edit</a> --}}
+                                                <a href="{{ url('admin/user-management/generate-password', $item->id) }}"
+                                                class="btn btn-sm btn-warning" onclick="return confirm('Yakin ingin mengubah password ini?')">Generate</a>
                                             <a href="{{ url('admin/user-management/delete', $item->id) }}"
                                                 onclick="return confirm('Apakah anda yakin ingin menghapus ini? ')"
-                                                class="btn btn-danger">Hapus</a>
+                                                class="btn btn-sm btn-danger">Hapus</a>
                                         </td>
                                     </tr>
                                 @empty

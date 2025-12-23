@@ -1,4 +1,7 @@
 @extends('admin.layouts.base')
+@section('title')
+    Edit Kandidat
+@endsection
 @section('content')
     <div class="row">
         <div class="col-md-12">
