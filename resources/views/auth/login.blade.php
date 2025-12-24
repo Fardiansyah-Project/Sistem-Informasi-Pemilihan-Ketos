@@ -43,8 +43,9 @@
                     </div>
                     <a href="{{ route('voter.register')}}" class="link-primary">Belum punya akun?</a>
                 </div>
-                <div class="d-grid mt-4">
+                <div class="d-grid mt-4 gap-2">
                     <button type="submit" class="btn btn-primary">Login</button>
+                    <a href="{{ url('/') }}" class="btn btn-secondary">Kembali ke Halaman Utama</a>
                 </div>
             </div>
         </form>

@@ -17,7 +17,9 @@
         <div class="auth-wrapper v3">
             <div class="auth-form">
                 <div class="auth-header">
-                    <a href="#"><img src="{{ asset('assets/images/logo-dark.svg') }}" alt="img"></a>
+                    <a href="#">
+                        <img width="250" src="{{ asset('assets/images/logo.png') }}" alt="img">
+                    </a>
                 </div>
                 @yield('content')
             </div>

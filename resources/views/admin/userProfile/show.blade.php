@@ -19,10 +19,13 @@
                             <label class="form-label" for="email">Email</label>
                             <p class="text-muted">{{ Auth::user()->email }}</p>
                         </div>
+                        <div class="form-group">
+                            <label class="form-label" for="email">Posisi Saat Ini</label>
+                            <p class="text-muted">{{ Auth::user()->role }}</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 @endsection

@@ -12,7 +12,7 @@
     <meta name="author" content="CodedThemes">
 
     <!-- [Favicon] icon -->
-    <link rel="icon" href="{{ asset('assets/images/favicon.svg') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('assets/images/logo-osis.png') }}" type="image/x-icon">
     <!-- [Google Font] Family -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap"

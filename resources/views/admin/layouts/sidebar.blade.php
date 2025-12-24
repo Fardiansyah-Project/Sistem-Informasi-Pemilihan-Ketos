@@ -3,7 +3,7 @@
         <div class="m-header">
             <a href="{{ url('/admin/')}}" class="b-brand text-primary d-flex align-items-center justify-content-center">
                 <!-- ========   Change your logo from here   ============ -->
-                <img src="{{ asset('assets/images/logo-osis.png')}}" class="rounded-circle" width="60"  alt="logo">
+                <img src="{{ asset('assets/images/logo-osis.png')}}" class="rounded-circle" width="50"  alt="logo">
                 <div class="">
                     <h4 class="text-primary m-0">SIP-Ketos</h4>
                     <p class="text-muted m-0" style="font-size: 8px">Sistem Informasi Pemilihan Ketua Osis</p>

@@ -19,7 +19,6 @@ class DashboardController extends Controller
 
         $leadingCandidate = Candidate::withCount('votes')->orderBy('votes_count', 'desc')->first();
 
-        // Mengambil data suara per kandidat
         $candidates = Candidate::withCount('votes')->orderBy('candidate_number', 'asc')->get();
 
         $absentVoters = User::where('role', 'voter')->doesntHave('vote')->get();

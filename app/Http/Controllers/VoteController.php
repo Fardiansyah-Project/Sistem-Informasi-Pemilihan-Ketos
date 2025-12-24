@@ -10,12 +10,10 @@ use Illuminate\Support\Facades\Auth;
 
 class VoteController extends Controller
 {
-    // VoteController.php
     public function index()
     {
         $user = Auth::user();
 
-        // Jika sudah memilih, tampilkan view "Sudah Memilih"
         if ($user->hasVoted()) {
             $myVote = $user->vote->candidate;
             return view('voting.index', compact('myVote'));
@@ -37,7 +35,6 @@ class VoteController extends Controller
             'candidate_id' => 'required|exists:candidates,id',
         ]);
 
-        // Validasi ganda di sisi server
         if (auth()->user()->hasVoted()) {
             return redirect()->back()->with('error', 'Anda sudah menggunakan hak pilih!');
         }

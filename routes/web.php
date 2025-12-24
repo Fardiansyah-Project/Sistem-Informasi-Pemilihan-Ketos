@@ -53,5 +53,7 @@ Route::middleware(['auth', 'is_admin'])->group(function () {
         Route::get('/show/{id}', [UserProfileController::class, 'show'])->name('show');
         Route::get('/edit/{id}', [UserProfileController::class, 'edit'])->name('edit');
         Route::put('/update/{id}', [UserProfileController::class, 'update'])->name('update');
+        Route::get('/update-password/{id}', [UserProfileController::class, 'updatePassword'])->name('update-password');
+        Route::put('/change-password/{id}', [UserProfileController::class, 'changePassword'])->name('change-password');
     });
 });

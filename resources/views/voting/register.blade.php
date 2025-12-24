@@ -21,24 +21,27 @@
                         {{ session('success') }}
                     </div>
                 @endif
-                <input type="hidden" id="role" name="role" value="voter" >
+                <input type="hidden" id="role" name="role" value="voter">
                 <div class="form-group mb-3">
                     <label class="form-label" for="name">Nama</label>
-                    <input type="text" id="name" name="name" value="{{ old('name') }}" class="form-control" placeholder="Nama" autocomplete="off">
+                    <input type="text" id="name" name="name" value="{{ old('name') }}" class="form-control"
+                        placeholder="Nama" autocomplete="off">
                     @error('name')
                         <small class="text-danger">{{ $message }}</small>
                     @enderror
                 </div>
                 <div class="form-group mb-3">
                     <label class="form-label" for="email">Email Address</label>
-                    <input type="email" id="email" name="email" value="{{ old('email') }}" class="form-control" placeholder="Email Address" autocomplete="off">
+                    <input type="email" id="email" name="email" value="{{ old('email') }}" class="form-control"
+                        placeholder="Email Address" autocomplete="off">
                     @error('email')
                         <small class="text-danger">{{ $message }}</small>
                     @enderror
                 </div>
                 <div class="form-group mb-3">
                     <label class="form-label" for="nis">Nomor Induk Siswa</label>
-                    <input type="text" id="nis" name="nis" value="{{ old('nis') }}" class="form-control" placeholder="Nomor Induk Siswa" autocomplete="off">
+                    <input type="text" id="nis" name="nis" value="{{ old('nis') }}" class="form-control"
+                        placeholder="Nomor Induk Siswa" autocomplete="off">
                     @error('nis')
                         <small class="text-danger">{{ $message }}</small>
                     @enderror
@@ -52,7 +55,8 @@
                 </div>
                 <div class="form-group mb-3">
                     <label class="form-label" for="password_confirmation">Konfirmasi Password</label>
-                    <input type="password" id="password_confirmation" name="password_confirmation" class="form-control" placeholder="Konfirmasi Password">
+                    <input type="password" id="password_confirmation" name="password_confirmation" class="form-control"
+                        placeholder="Konfirmasi Password">
                     @error('password_confirmation')
                         <small class="text-danger">{{ $message }}</small>
                     @enderror
@@ -65,8 +69,9 @@
                     </div>
                     <a href="{{ route('login') }}" class="link-primary">Sudah punya akun?</a>
                 </div>
-                <div class="d-grid mt-4">
+                <div class="d-grid mt-4 gap-2">
                     <button type="submit" class="btn btn-primary">Daftar</button>
+                    <a href="{{ url('/') }}" class="btn btn-secondary">Kembali ke Halaman Utama</a>
                 </div>
             </div>
         </form>

@@ -1,11 +1,11 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="{{ url('/') }}">
-            <img src="{{ asset('assets/images/logo-osis.png') }}" class="rounded-circle" width="40" alt="logo">
-            <div class="">
+            <img src="{{ asset('assets/images/logo.png') }}" class="rounded-circle" width="100" alt="logo">
+            {{-- <div class="">
                 <h4 class="text-primary m-0" style="font-size: 1rem">SIP-Ketos</h4>
                 <p class="text-muted m-0" style="font-size: 7px">Sistem Informasi Pemilihan Ketua Osis</p>
-            </div>
+            </div> --}}
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

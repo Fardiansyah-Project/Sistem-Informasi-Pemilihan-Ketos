@@ -155,41 +155,46 @@
                         <div class="tab-content" id="mysrpTabContent">
                             <div class="tab-pane fade show active" id="drp-tab-1" role="tabpanel"
                                 aria-labelledby="drp-t1" tabindex="0">
-                                <a href="{{ url('admin/user-profile/edit/' . Auth::user()->id) }}" class="dropdown-item">
+                                <a href="{{ url('admin/user-profile/edit/' . Auth::user()->id) }}"
+                                    class="dropdown-item">
                                     <i class="ti ti-edit-circle"></i>
                                     <span>Edit Profile</span>
                                 </a>
-                                <a href="{{ url('admin/user-profile/show/' . Auth::user()->id) }}" class="dropdown-item">
+                                <a href="{{ url('admin/user-profile/show/' . Auth::user()->id) }}"
+                                    class="dropdown-item">
                                     <i class="ti ti-user"></i>
                                     <span>Lihat Profile</span>
                                 </a>
-                                <a href="{{ route('logout') }}" class="dropdown-item">
-                                    <i class="ti ti-power"></i>
-                                    <span>Logout</span>
-                                </a>
+                                <form action="{{ route('logout') }}" method="post">
+                                    @csrf
+                                    <button type="submit" class="dropdown-item">
+                                        <i class="ti ti-power"></i>
+                                        <span>Logout</span>
+                                    </button>
+                                </form>
                             </div>
                             <div class="tab-pane fade" id="drp-tab-2" role="tabpanel" aria-labelledby="drp-t2"
                                 tabindex="0">
-                                <a href="#!" class="dropdown-item">
+                                <a href="{{ url('admin/user-profile/update-password/'. Auth::user()->id) }}" class="dropdown-item">
+                                    <i class="ti ti-lock"></i>
+                                    <span>Ganti Password</span>
+                                </a>
+                                {{-- <a href="#!" class="dropdown-item">
                                     <i class="ti ti-help"></i>
                                     <span>Support</span>
-                                </a>
-                                <a href="#!" class="dropdown-item">
-                                    <i class="ti ti-user"></i>
-                                    <span>Account Settings</span>
-                                </a>
-                                <a href="#!" class="dropdown-item">
+                                </a> --}}
+                                {{-- <a href="#!" class="dropdown-item">
                                     <i class="ti ti-lock"></i>
                                     <span>Privacy Center</span>
-                                </a>
-                                <a href="#!" class="dropdown-item">
+                                </a> --}}
+                                {{-- <a href="#!" class="dropdown-item">
                                     <i class="ti ti-messages"></i>
                                     <span>Feedback</span>
                                 </a>
                                 <a href="#!" class="dropdown-item">
                                     <i class="ti ti-list"></i>
                                     <span>History</span>
-                                </a>
+                                </a> --}}
                             </div>
                         </div>
                     </div>
