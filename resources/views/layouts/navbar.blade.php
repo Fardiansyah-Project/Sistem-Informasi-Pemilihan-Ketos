@@ -22,14 +22,16 @@
                         <a class="nav-link {{ request()->is('voting') ? 'active' : '' }}"
                             href="{{ url('/voting') }}">Memilih</a>
                     </li>
-                    <li class="nav-item">
-                        <form action="{{ route('logout') }}" method="post">
-                            @csrf
-                            <button type="submit" class="btn nav-link">
-                                <i class="ti ti-power text-danger"></i>
-                            </button>
-                        </form>
-                    </li>
+                    @auth
+                        <li class="nav-item">
+                            <form action="{{ route('logout') }}" method="post">
+                                @csrf
+                                <button type="submit" class="btn nav-link">
+                                    <i class="ti ti-power text-danger"></i>
+                                </button>
+                            </form>
+                        </li>
+                    @endauth
                 </ul>
             </ul>
         </div>
